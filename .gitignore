@@ -9,3 +9,27 @@ bin-release/
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
+!#/bin/bash
+
+
+# Script to create menus and take action according to that selected menu item.
+#
+#
+while :
+do
+clear
+echo "----------------------------------------------"
+echo " * * * * * * * Main Menu * * * * * * * * * * "
+echo "----------------------------------------------"
+echo "[1] Change Password"
+echo "[2] See The Disk Space"
+echo "[3] Loging Other User Through SSH"
+echo "[4] Show All Service Running"
+echo "[5] Show All Ports Are Opned"
+echo "[6] Show All Java Apps Running"
+echo "[7] Facility To Kill App"
+echo "[8] Exit/stop"
+echo "----------------------------------------------"
+echo -n "Enter your menu choice [1-5]:"
+read yourch
+case $yourch in
